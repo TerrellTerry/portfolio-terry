@@ -1,0 +1,39 @@
+.grid{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 2.06fr 1fr;
+    margin-top: 135px;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.skill{
+    border: 1px solid white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.button{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease; /* apply transition to transform property */
+  }
+
+  .slide {
+    transform: translateX(-100%); /* move the text off the screen */
+  }

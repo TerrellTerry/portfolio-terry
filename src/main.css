@@ -18,7 +18,7 @@ nav{
     border-bottom: 1px solid white;
     top: 0;
     position: fixed;
-    width: 100%;
+    z-index: 1;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -52,7 +52,7 @@ a{
     background-size: cover;
     background-attachment: fixed;
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0; z-index: 2;
+    top: 0; right: 0; bottom: 0; left: 0; z-index: 3;
     font-size: 50px;
     text-align: center;
     vertical-align: center;
@@ -170,7 +170,7 @@ a{
     background-size: cover;
     background-attachment: fixed;
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0; z-index: 1;
+    top: 0; right: 0; bottom: 0; left: 0; z-index: 2;
     font-size: 50px;
     text-align: center;
     vertical-align: center;
@@ -179,11 +179,12 @@ a{
 }
 
 .projects{
+    margin-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    gap: 200px;
 }
 
 .project-box{
@@ -194,8 +195,14 @@ a{
     margin: 20px;
     margin-right: 200px;
     margin-left: 200px;
+    margin-bottom: 100px;
     border-radius: 5%;
     border: 0.5px solid black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-box:hover{
+    filter: brightness(0.8);
 }
 
 .project-box > p{
@@ -211,4 +218,13 @@ a{
 
 .project-box:nth-child(even) {
     margin-left: auto;
+}
+
+.fade-in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+    opacity: 1;
 }
