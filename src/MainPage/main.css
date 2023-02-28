@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+body{
+    background-color: rgb(49, 58, 89, 35);
+    overflow: hidden;
+}
+
+nav{
+    background-color: rgb(33, 43, 92, 36);
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid white;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav > .nav-section{
+    padding: 3rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid white;
+    align-items: center;
+    justify-content: center;
+}
+
+nav > .nav-section > a:hover{
+    filter: brightness(0.8);
+}
+
+h1, h2, h3, a, p, span{
+    font-family: 'Climate Crisis', cursive;
+    font-weight: 400;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.introPage{
+    background-image: linear-gradient(to bottom right, rgb(3, 94, 158), rgb(235, 150, 26));
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0; z-index: 2;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.pfp{
+    width: 100px;
+    height: 100px;
+}
+
+#nav-logo-section,
+#nav-link-section{
+    flex-basis: calc(100% / 3);
+}
+
+#nav-social-section,
+#nav-contact-section{
+    flex-grow: 1;
+}
+
+#nav-link-section{
+    gap: 6rem;
+}
+
+#nav-social-section{
+    gap: 3rem;
+}
+
+#nav-logo-section{
+    justify-content: flex-start;
+}
+#nav-logo-section > a > i{
+    font-size: 2.5em;
+}
+
+.main-content{
+    display: flex;
+    flex-grow: 1;
+    margin-top: 135px;
+}
+
+.section{
+    border: 1px solid white;
+}
+
+.path{
+    flex-basis: calc(202% / 3);
+    background-color: rgb(69, 173, 113);
+}
+.information{
+    position: fixed;
+    float: right;
+    width: calc(100% / 3);
+    height: 100%;
+    text-align: left;
+}
+
+.information-text{
+    padding: 2rem;
+}
+
+.button-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.choose-button {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5%;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+.game-button{
+    background-color: #fcca64;
+    right: 200px;
+}
+.software-button{
+    background-color: #2d6adb;
+    left: 200px;
+}
+
+.choose-button:hover {
+    filter: brightness(0.8);
+}
+
+.choose-image{
+    user-drag: none; 
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.choose-adventure-page{
+    background-image: linear-gradient(to bottom right, rgb(3, 94, 158), rgb(235, 150, 26));
+    background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0; z-index: 1;
+    font-size: 50px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.project-box{
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+.project-box:nth-child(odd) {
+    margin-right: auto;
+  }
+
+.project-box:nth-child(even) {
+    margin-left: auto;
+}
