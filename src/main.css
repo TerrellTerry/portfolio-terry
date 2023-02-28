@@ -118,10 +118,13 @@ a{
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .choose-button {
-    position: fixed;
+    /* position: fixed; */
     width: 600px;
     height: 600px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -162,6 +165,8 @@ a{
     font-size: 50px;
     text-align: center;
     vertical-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects{
