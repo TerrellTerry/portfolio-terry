@@ -102,6 +102,8 @@ a{
     flex-basis: calc(202% / 3);
     background-color: rgb(69, 173, 113);
     background-image: url('Images/giant-sequoia-tree-Sequoia-National-Park-California.png');
+    background-size: cover;
+    background-position: center 50%;
 }
 .information{
     position: fixed;
