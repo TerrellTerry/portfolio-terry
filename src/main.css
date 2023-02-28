@@ -101,6 +101,7 @@ a{
 .path{
     flex-basis: calc(202% / 3);
     background-color: rgb(69, 173, 113);
+    background-image: url('Images/giant-sequoia-tree-Sequoia-National-Park-California.png');
 }
 .information{
     position: fixed;
@@ -110,8 +111,15 @@ a{
     text-align: left;
 }
 
+.information > img{
+    width: 350px;
+    height: 400px;
+    padding-left: 2rem;
+    border-radius: 5%;
+}
+
 .information-text{
-    padding: 2rem;
+    padding-left: 2rem;
 }
 
 .button-container {
@@ -178,13 +186,22 @@ a{
 }
 
 .project-box{
-    width: 200px;
-    height: 200px;
-    background-color: #ccc;
+    width: 250px;
+    height: 250px;
+    background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     margin: 20px;
     margin-right: 200px;
     margin-left: 200px;
+    border-radius: 5%;
+    border: 0.5px solid black;
+}
+
+.project-box > p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 1em;
 }
 
 .project-box:nth-child(odd) {

@@ -8,9 +8,11 @@ const gameButton = document.getElementById("games-button");
 const softwareProjects = document.getElementsByClassName("software-box");
 const gameProjects = document.getElementsByClassName("game-box");
 
-const chooseAdventureDiv = document.getElementById("chooseAdventure")
+const chooseAdventureDiv = document.getElementById("chooseAdventure");
 
-const buttonHolder = document.getElementById("button-holder")
+const buttonHolder = document.getElementById("button-holder");
+
+const resume = document.getElementById("resume");
 
 let clickedButton = false;
 
@@ -25,6 +27,7 @@ document.addEventListener("click", event =>{
             for(item of gameProjects){
                 item.style.display = 'none';
             }
+            resume.setAttribute('href','softwareResumeOld.pdf');
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
             setTimeout(bodyOverflow, 1000);
         }
@@ -35,6 +38,7 @@ document.addEventListener("click", event =>{
             for(item of softwareProjects){
                 item.style.display = 'none';
             }
+            resume.setAttribute('href','gameResumeOld.pdf');
             //This is where we set up the rest of the logic needed to show the information about software/games
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
             setTimeout(bodyOverflow, 1000);
