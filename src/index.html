@@ -57,7 +57,7 @@
             <a href="#" id="nav-work-button">WORK</a>
         </div>
         <div id="nav-social-section" class="nav-section">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/terrell-terry-9033b6158/" target="_blank">
                 <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="oldresume.pdf" target="_blank" id="resume">
@@ -65,7 +65,7 @@
             </a>
         </div>
         <div id="nav-contact-section" class="nav-section">
-            <a href="#">GET IN TOUCH</a>
+            <a href="mailto:terrell.g.terry@gmail.com">GET IN TOUCH</a>
         </div>
     </nav>
 
@@ -74,30 +74,33 @@
         <!-- The path section -->
         <div class="path section">
             <!-- This is where extra paragraph content can go -->
-            <h2 style="text-align: center">My Software Journey</h2>
+            <h2 id="my-journey" style="font-size: 30px; text-align: center">My Software Journey</h2>
             <div class="projects">
-                <div class="project-box fade-in  software-box">
+                <div onclick="setNewInfo('software', 1)" class="project-box fade-in  software-box">
                     <p>Software project 1</p>
+                    <p>This a description with lots of text to see how much I can fit within this tiny
+                        box lol
+                    </p>
                 </div>
-                <div class="project-box fade-in  software-box">
+                <div onclick="setNewInfo('software', 2)" class="project-box fade-in  software-box">
                     <p>Software project 2</p>
                 </div>
-                <div class="project-box fade-in  software-box">
+                <div onclick="setNewInfo('software', 3)" class="project-box fade-in  software-box">
                     <p>Software project 3</p>
                 </div>
-                <div class="project-box fade-in  software-box">
+                <div onclick="setNewInfo('software', 4)" class="project-box fade-in  software-box">
                     <p>Software project 4</p>
                 </div>
-                <div class="project-box fade-in game-box">
+                <div onclick="setNewInfo('game', 1)" class="project-box fade-in game-box">
                     <p>Game project 1</p>
                 </div>
-                <div class="project-box fade-in game-box">
+                <div onclick="setNewInfo('game', 2)" class="project-box fade-in game-box">
                     <p>Game project 2</p>
                 </div>
-                <div class="project-box fade-in game-box">
+                <div onclick="setNewInfo('game', 3)" class="project-box fade-in game-box">
                     <p>Game project 3</p>
                 </div>
-                <div class="project-box fade-in game-box">
+                <div onclick="setNewInfo('game', 4)" class="project-box fade-in game-box">
                     <p>Game project 4</p>
                 </div>
 
@@ -108,10 +111,60 @@
         <div style='float:right; width: 180px'>
             <div style='position: fixed'>
                 <div class="information section">
-                    <h2 class="information-text">Lorem ipsum</h2>
-                    <img src="Images/pfp.png" alt="A picture of myself!">
-                    <p class="information-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
+                    <div class="information-text" id="default">
+                        <h2 id="my-title">Game Developer</h2>
+                        <img src="Images/pfp.png" alt="A picture of myself!">
+                        <p class="readable-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="information-text project-info" id="software-project-1">
+                        <h2>Software Project 1</h2>
+                        <p class="readable-text">
+                            This is software project 1;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="software-project-2">
+                        <h2>Software Project 2</h2>
+                        <p class="readable-text">
+                            This is software project 2;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="software-project-3">
+                        <h2>Software Project 3</h2>
+                        <p class="readable-text">
+                            This is software project 3;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="software-project-4">
+                        <h2>Software Project 4</h2>
+                        <p class="readable-text">
+                            This is software project 4;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="game-project-1">
+                        <h2>Game Project 1</h2>
+                        <p class="readable-text">
+                            This is game project 1;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="game-project-2">
+                        <h2>Game Project 2</h2>
+                        <p class="readable-text">
+                            This is game project 2;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="game-project-3">
+                        <h2>Game Project 3</h2>
+                        <p class="readable-text">
+                            This is game project 3;
+                        </p>
+                    </div>
+                    <div class="information-text project-info"  id="game-project-4">
+                        <h2>Game Project 4</h2>
+                        <p class="readable-text">
+                            This is game project 4;
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

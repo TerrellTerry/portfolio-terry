@@ -13,6 +13,13 @@ const chooseAdventureDiv = document.getElementById("chooseAdventure");
 const buttonHolder = document.getElementById("button-holder");
 
 const resume = document.getElementById("resume");
+const myJourneyText = document.getElementById("my-journey");
+
+const defaultInfo = document.getElementById("default");
+
+const myTitle = document.getElementById("my-title");
+
+let currInfo = document.getElementById("default");
 
 let clickedButton = false;
 
@@ -28,6 +35,8 @@ document.addEventListener("click", event =>{
                 item.style.display = 'none';
             }
             resume.setAttribute('href','softwareResumeOld.pdf');
+            myJourneyText.innerHTML = 'My<FONT COLOR="#2d6adb">  Software  </FONT>Journey';
+            myTitle.innerText = 'Software Developer';
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
             setTimeout(bodyOverflow, 1000);
         }
@@ -38,7 +47,9 @@ document.addEventListener("click", event =>{
             for(item of softwareProjects){
                 item.style.display = 'none';
             }
+            myJourneyText.innerHTML = 'My<FONT COLOR="#fcca64">  Games  </FONT>Journey';
             resume.setAttribute('href','gameResumeOld.pdf');
+            myTitle.innerText = 'Game Developer';
             //This is where we set up the rest of the logic needed to show the information about software/games
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
             setTimeout(bodyOverflow, 1000);
@@ -50,13 +61,40 @@ document.addEventListener("click", event =>{
     }
 });
 
+let clickedProject = false;
+function setNewInfo(name, projectNum){
+    let projectInfo = document.getElementById(name+'-project-'+projectNum);
+    if(currInfo.id == projectInfo.id)
+    {
+        return;
+    }
+    fadeOut(currInfo, 0.5, 0);
+    setPrevInfo(projectInfo);
+    // setTimeout(setPrevInfo, 1500, projectInfo);
+    setTimeout(fadeIn, 500, projectInfo, 0.5);
+}
+
+function setPrevInfo(element){
+    currInfo = element;
+}
+
 function resetAdventure(steps){
     clickedButton = false;
     fadeIn(chooseAdventureDiv, steps);
     fadeIn(gameButton, steps);
     fadeIn(softwareButton, steps);
     setTimeout(makeProjectsVisible, 500);
+    setTimeout(makeDefaultInfo, 500);
 }
+
+function makeDefaultInfo(){
+    currInfo.style.display = 'none';
+    currInfo = defaultInfo;
+    defaultInfo.style.display = 'inline';
+    defaultInfo.style.opacity = 1;
+    defaultInfo.style.paddingLeft = '2em';
+}
+
 function makeProjectsVisible(){
     for(item of gameProjects){
         item.style.display = 'inline';

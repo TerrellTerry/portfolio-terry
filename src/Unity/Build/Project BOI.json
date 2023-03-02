@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Project BOI",
+"productVersion": "1.0",
+"dataUrl": "Project BOI.data.unityweb",
+"asmCodeUrl": "Project BOI.asm.code.unityweb",
+"asmMemoryUrl": "Project BOI.asm.memory.unityweb",
+"asmFrameworkUrl": "Project BOI.asm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.13f1"
+}
