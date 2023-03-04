@@ -34,7 +34,7 @@ document.addEventListener("click", event =>{
             for(item of gameProjects){
                 item.style.display = 'none';
             }
-            resume.setAttribute('href','softwareResumeOld.pdf');
+            resume.setAttribute('href','Files/Terrell Terry Resume Software.pdf');
             myJourneyText.innerHTML = 'My<FONT COLOR="#2d6adb">  Software  </FONT>Journey';
             myTitle.innerText = 'Software Developer';
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
@@ -48,7 +48,7 @@ document.addEventListener("click", event =>{
                 item.style.display = 'none';
             }
             myJourneyText.innerHTML = 'My<FONT COLOR="#fcca64">  Games  </FONT>Journey';
-            resume.setAttribute('href','gameResumeOld.pdf');
+            resume.setAttribute('href','/Files/Terrell Terry Resume Games.pdf');
             myTitle.innerText = 'Game Developer';
             //This is where we set up the rest of the logic needed to show the information about software/games
             setTimeout(fadeOut, 1000, chooseAdventureDiv, 0.1, 0);
