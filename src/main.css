@@ -126,6 +126,11 @@ a{
     padding-right: 2rem;
 }
 
+.link{
+    text-decoration: underline;
+    color: cyan;
+}
+
 .button-container {
     margin-left: 200px;
     margin-right: 200px;
